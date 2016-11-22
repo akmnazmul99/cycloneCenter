@@ -23,39 +23,42 @@ class Auth extends CI_Controller {
 
     //redirect if needed, otherwise display the user list
     function index() {
-
-        if (!$this->ion_auth->logged_in()) {
-            //redirect them to the login page
-            redirect('auth/login', 'refresh');
-        } else {
-            $user_group = $this->ion_auth->get_current_user_types();
-            foreach ($user_group as $group) {
-                if($group == ADMIN){
-                    //set the flash data error message if there is one
-                    $this->data['message'] = (validation_errors()) ? validation_errors() : $this->session->flashdata('message');
-
-                    //list the users
-                    $this->data['users'] = $this->ion_auth->users()->result();
-                    foreach ($this->data['users'] as $k => $user) {
-                        $this->data['users'][$k]->groups = $this->ion_auth->get_users_groups($user->id)->result();
-                    }
-
-                    //$this->_render_page('auth/index', $this->data);
-                    $this->template->load(NULL, ADMIN_LOGIN_SUCCESS_VIEW, $this->data);
-                    break;
-                }
-                elseif($group == MEMBER){
-                    $this->template->load(NULL, MEMBER_LOGIN_SUCCESS_VIEW);
-                    break;
-                }
-                else{
-                    echo "Non member";
-                }
-            }
-            
-        }
+        $this->template->load(NULL, "demo/index");
     }
 
+//    function index() {
+//
+//        if (!$this->ion_auth->logged_in()) {
+//            //redirect them to the login page
+//            redirect('auth/login', 'refresh');
+//        } else {
+//            $user_group = $this->ion_auth->get_current_user_types();
+//            foreach ($user_group as $group) {
+//                if($group == ADMIN){
+//                    //set the flash data error message if there is one
+//                    $this->data['message'] = (validation_errors()) ? validation_errors() : $this->session->flashdata('message');
+//
+//                    //list the users
+//                    $this->data['users'] = $this->ion_auth->users()->result();
+//                    foreach ($this->data['users'] as $k => $user) {
+//                        $this->data['users'][$k]->groups = $this->ion_auth->get_users_groups($user->id)->result();
+//                    }
+//
+//                    //$this->_render_page('auth/index', $this->data);
+//                    $this->template->load(NULL, ADMIN_LOGIN_SUCCESS_VIEW, $this->data);
+//                    break;
+//                }
+//                elseif($group == MEMBER){
+//                    $this->template->load(NULL, MEMBER_LOGIN_SUCCESS_VIEW);
+//                    break;
+//                }
+//                else{
+//                    echo "Non member";
+//                }
+//            }
+//            
+//        }
+//    }
     //log the user in
     function login() {
         $this->data['title'] = "Login";
