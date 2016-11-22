@@ -39,15 +39,18 @@
         <script src="<?php echo base_url(); ?>resources/js/global/jquery.blockui.min.js" type="text/javascript"></script>
         <script src="<?php echo base_url(); ?>resources/js/global/jquery.uniform.min.js" type="text/javascript"></script>
         <script src="<?php echo base_url(); ?>resources/js/global/bootstrap-switch.min.js" type="text/javascript"></script>
+        <script src="<?php echo base_url(); ?>resources/js/global/raphael-min.js" type="text/javascript"></script>
+        <script src="<?php echo base_url(); ?>resources/js/global/jquery.sparkline.min.js" type="text/javascript"></script>
+        <script src="<?php echo base_url(); ?>resources/js/global/metronic.js" type="text/javascript"></script>
+        <script src="<?php echo base_url(); ?>resources/js/global/morris.min.js" type="text/javascript"></script>
+        <script src="<?php echo base_url(); ?>resources/js/global/main.js" type="text/javascript"></script>
+        <script src="<?php echo base_url(); ?>resources/js/global/excanvas.min.js" type="text/javascript"></script>
+        
         <script src="<?php echo base_url(); ?>resources/js/global/amcharts/amcharts.js" type="text/javascript" ></script>
         <script src="<?php echo base_url(); ?>resources/js/global/amcharts/serial.js" type="text/javascript" ></script>
         <script src="<?php echo base_url(); ?>resources/js/global/amcharts/pie.js" type="text/javascript" ></script>
         <script src="<?php echo base_url(); ?>resources/js/global/amcharts/light.js" type="text/javascript" ></script>
-        <script src="<?php echo base_url(); ?>resources/js/global/morris.min.js" type="text/javascript"></script>
-        <script src="<?php echo base_url(); ?>resources/js/global/raphael-min.js" type="text/javascript"></script>
-        <script src="<?php echo base_url(); ?>resources/js/global/jquery.sparkline.min.js" type="text/javascript"></script>
-        <script src="<?php echo base_url(); ?>resources/js/global/metronic.js" type="text/javascript"></script>
-
+        
         <script src="<?php echo base_url(); ?>resources/js/admin/layout.js" type="text/javascript"></script>
         <script src="<?php echo base_url(); ?>resources/js/admin/quick-sidebar.js" type="text/javascript"></script>
         <script src="<?php echo base_url(); ?>resources/js/admin/index.js" type="text/javascript"></script>

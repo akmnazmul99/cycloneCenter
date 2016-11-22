@@ -3,7 +3,7 @@
             <!-- BEGIN PAGE CONTENT FIXED -->
             <div class="page-content-fixed-header">
                 <ul class="page-breadcrumb">
-                    <li><a href="#">Applications</a></li>
+                    <li><a href="#">Chart</a></li>
                 </ul>
 
                 <div class="content-header-menu">
@@ -15,10 +15,10 @@
                             <i class="fa fa-circle"></i>
                         </button>
                         <ul class="dropdown-menu-v2">
-                            <li> <a href="start.html">Application</a> </li>
-                            <li> <a href="start.html">Reports</a> </li>
-                            <li> <a href="start.html">Templates</a> </li>
-                            <li> <a href="start.html">Settings</a> </li>
+                            <li> <a href="">Application</a> </li>
+                            <li> <a href="">Reports</a> </li>
+                            <li> <a href="">Templates</a> </li>
+                            <li> <a href="">Settings</a> </li>
                         </ul>
                     </div>
                     <!-- END DROPDOWN AJAX MENU -->
@@ -34,8 +34,6 @@
                     <!-- END MENU TOGGLER -->
                 </div>
             </div>
-
-          
 
             <div class="page-fixed-main-content">
                 <div class="row">
@@ -74,8 +72,8 @@
             <!-- END PAGE CONTENT FIXED -->
 
             <!-- Copyright BEGIN -->
-            <p class="copyright-v2">2016 ©dev. 
-                <a href="" target="_blank">Cyclone Center!</a>
+            <p class="copyright-v2">2016 © dev. 
+                <a href="" target="_blank">Cyclone Center !</a>
             </p>
            
         </div>
